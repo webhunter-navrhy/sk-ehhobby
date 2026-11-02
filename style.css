@@ -15,7 +15,7 @@ a{color:inherit}
 .hero small{color:#ff6b73;font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:13px}
 .hero h1{font-size:clamp(46px,8vw,104px);margin:14px 0 18px}.hero h1 em{color:var(--red);font-style:normal;display:block}
 .hero p{max-width:520px;color:#c9cad6;margin-bottom:28px}.hero .btns{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:7vw}
-.hero img{width:100%;display:block;border-top:6px solid var(--red)}
+.hero img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block;border-top:6px solid var(--red)}
 .facts{display:grid;grid-template-columns:repeat(4,1fr);max-width:1200px;margin:auto;background:#fff;border:1px solid var(--line);transform:translateY(-1px)}
 .facts div{padding:22px;border-right:1px solid var(--line)}.facts div:last-child{border:0}
 .facts b{display:block;font:700 22px "Barlow Condensed";text-transform:uppercase;color:var(--blue)}.facts span{font-size:15px;color:#555}
@@ -29,7 +29,7 @@ h2{font-size:clamp(34px,5vw,58px);margin-bottom:22px;color:var(--blue)}
 .brands{background:var(--bg)}
 .bl{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
 .bl span{background:#fff;border:1px solid var(--line);border-left:4px solid var(--red);padding:12px 20px;font:700 22px "Barlow Condensed";text-transform:uppercase}
-.brands .ban{margin-top:40px;width:100%;display:block;border:1px solid var(--line)}
+.brands .ban{height:auto;margin-top:40px;width:100%;display:block;border:1px solid var(--line)}
 .shops{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
 .shops img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
 .shops figcaption{padding:12px 0;font-weight:600}
