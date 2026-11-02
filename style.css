@@ -1,0 +1,43 @@
+:root{--blue:#2b2c8c;--ink:#14151f;--red:#e30613;--bg:#f4f5f8;--line:#dfe1e8}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font:17px/1.6 "Barlow",system-ui,sans-serif;color:var(--ink);background:#fff}
+h1,h2,h3{font-family:"Barlow Condensed","Barlow",sans-serif;text-transform:uppercase;line-height:1.02;letter-spacing:.01em}
+a{color:inherit}
+.top{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:24px;padding:10px 4vw;background:#fff;border-bottom:3px solid var(--red)}
+.logo img{height:44px;width:auto;display:block}
+.top nav{margin-left:auto;display:flex;gap:22px;align-items:center;font-weight:600;font-size:15px;text-transform:uppercase}
+.top nav a{text-decoration:none}.top nav a:hover{color:var(--red)}
+.btn{display:inline-block;background:var(--red);color:#fff!important;padding:12px 22px;font-weight:700;text-transform:uppercase;text-decoration:none;font-size:15px;letter-spacing:.03em}
+.btn:hover{background:#b8000d}.btn.o{background:transparent;border:2px solid #fff}.btn.d{background:var(--ink)}
+#mn,.burger{display:none}
+.hero{background:var(--ink);color:#fff;padding:7vw 4vw 0;overflow:hidden}
+.hero .in{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end}
+.hero small{color:#ff6b73;font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:13px}
+.hero h1{font-size:clamp(46px,8vw,104px);margin:14px 0 18px}.hero h1 em{color:var(--red);font-style:normal;display:block}
+.hero p{max-width:520px;color:#c9cad6;margin-bottom:28px}.hero .btns{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:7vw}
+.hero img{width:100%;display:block;border-top:6px solid var(--red)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);max-width:1200px;margin:auto;background:#fff;border:1px solid var(--line);transform:translateY(-1px)}
+.facts div{padding:22px;border-right:1px solid var(--line)}.facts div:last-child{border:0}
+.facts b{display:block;font:700 22px "Barlow Condensed";text-transform:uppercase;color:var(--blue)}.facts span{font-size:15px;color:#555}
+section{padding:80px 4vw}.w{max-width:1200px;margin:auto}
+.kick{color:var(--red);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:13px;margin-bottom:8px}
+h2{font-size:clamp(34px,5vw,58px);margin-bottom:22px;color:var(--blue)}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:30px}
+.cats a{padding:34px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-decoration:none;position:relative;transition:.2s}
+.cats a:hover{background:var(--blue);color:#fff}
+.cats b{display:block;font:700 28px "Barlow Condensed";text-transform:uppercase}.cats span{font-size:14px;opacity:.7}
+.brands{background:var(--bg)}
+.bl{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.bl span{background:#fff;border:1px solid var(--line);border-left:4px solid var(--red);padding:12px 20px;font:700 22px "Barlow Condensed";text-transform:uppercase}
+.brands .ban{margin-top:40px;width:100%;display:block;border:1px solid var(--line)}
+.shops{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.shops img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.shops figcaption{padding:12px 0;font-weight:600}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.eshop{background:var(--blue);color:#fff}.eshop h2{color:#fff}.eshop p{max-width:640px;margin-bottom:26px;color:#dcdcf5}
+.box{background:var(--bg);padding:30px;border-top:4px solid var(--red)}.box dt{font-weight:700;margin-top:10px}.box dd{margin:0}
+form{display:grid;gap:12px;margin-top:20px}input,textarea{font:inherit;padding:12px;border:1px solid #bbb;width:100%}
+footer{background:var(--ink);color:#9a9bab;padding:28px 4vw;font-size:14px;text-align:center}
+.fade{opacity:0;transform:translateY(16px);transition:.6s}.fade.v{opacity:1;transform:none}
+@media(max-width:860px){.hero .in,.two{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}.cats{grid-template-columns:1fr 1fr}.shops{grid-template-columns:1fr}
+.burger{display:block;margin-left:auto;font-size:28px;cursor:pointer}.top nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:20px;border-bottom:3px solid var(--red)}#mn:checked~nav{display:flex}.logo img{height:34px}}
